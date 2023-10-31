@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+button{
+  transition: all .1s ease;
+}
+button:hover{
+  background-color: rgba(76, 0, 255, 0.553);
+}
+
