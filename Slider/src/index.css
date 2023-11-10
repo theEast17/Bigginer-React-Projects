@@ -48,14 +48,14 @@ body {
 }
 
 .section-center {
+  display: flex;
+  overflow: hidden;
+  position: relative;
   margin: 0 auto;
   margin-top: 2rem;
   width: 65vw;
-  height: 300px;
+  min-height: 450px;   /* mandatrory to give height*/
   text-align: center;
-  position: relative;
-  display: flex;
-  overflow: hidden;
 }
 
 .reviewBox {
@@ -115,7 +115,7 @@ button {
 .left,
 .right {
   position: absolute;
-  bottom: 50%;
+  bottom: 60%;
   color: aliceblue;
   background-color: rgb(81, 78, 78);
   padding: 2px;
@@ -133,13 +133,14 @@ button:hover{
   background-color: brown;
 }
 
-article.activeSlide {
+.reviewBox.activeSlide {
   opacity: 1;
   transform: translateX(0);
 }
-article.lastSlide {
-  transform: translateX(-100%);
-}
-article.nextSlide {
+.reviewBox.nextSlide {
   transform: translateX(100%);
 }
+.reviewBox.lastSlide {
+  transform: translateX(-100%);
+}
+

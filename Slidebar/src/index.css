@@ -1,0 +1,196 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background-color: rgb(220, 241, 241);
+}
+.home-container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-toggle{
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  font-size: 2rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: rgb(80, 142, 234);
+  transition: all .3s ease;
+  animation: zoomInOut 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes zoomInOut {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.4);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.btn{
+  display: inline-block;
+  background: black;
+  color: aliceblue;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+.btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition:all .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.show-modal{
+  transform: translate(0);
+  background-color: rgba(107, 100, 100, 0.514);
+}
+
+.modal-container{
+  width: 90vw;
+  height: 30vh;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.modal-container h3{
+  letter-spacing: 1px;
+}
+.close-modal-btn{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+}
+
+.sidebar-container{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  background-color: #fff;
+  transform: translate(-100%);
+  transition: all .3s ease;
+}
+
+.show-sidebar{
+  transform: translate(0);
+}
+.sidebar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+.sidebar h1{
+  letter-spacing: 1px;
+}
+.sidebar span{
+  margin-left: .3rem;
+  color: rgb(80, 131, 234);
+}
+.sidebarBtn{
+  display: grid;
+  place-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+}
+
+.navigation{
+  padding: .5rem 0 .5rem 1rem;
+}
+.navigation ul{
+  display: flex;
+  align-items: center;
+  padding: .8rem 0;
+  gap: .8rem;
+  transition: all .3s ease;
+}
+.navigation ul:hover{
+  padding-left: .5rem;
+  background-color: rgb(162, 227, 227);
+}
+ul span{
+  display: grid;
+  place-items: center;
+  color: cadetblue;
+}
+ul a{
+  color: green;
+  text-transform: capitalize;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100vw;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width:768px) {
+ 
+  .sidebar-container{
+    width: 40vw;
+  }
+  .social{
+    width: 40vw;
+  }
+}
+
+
+
