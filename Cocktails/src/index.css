@@ -1,0 +1,305 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+button{
+  outline: none;
+  border: none;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background-color:rgb(255, 255, 255);
+}
+.navbar{
+  width: 100%;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+.nav-center{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem .7rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
+}
+.navLogo{
+  color: black;
+}
+.navLogo span{
+  color:  rgb(78, 115, 22);
+}
+.navLogo h1{
+  letter-spacing: 2px;
+}
+.nav-links{
+  display: flex;
+  width: 30vw;
+  gap:.8rem;
+  align-items: center;
+}
+.nav-links li{
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.aboutSection,.errorSection{
+  width: 90%;
+  margin: 3rem auto;
+}
+.aboutTitle,.errorTitle{
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.aboutContent{
+  letter-spacing: 2px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.errorBtn{
+  display: block;
+  margin: 1rem auto;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: rgb(78, 115, 22);
+  padding: .5rem;
+  transition: .3s all ease;
+}
+.errorBtn:hover{
+  background-color: transparent;
+  color:rgb(78, 115, 22);
+  border: 1px solid rgb(78, 115, 22);
+}
+.loadingContainer{
+  position: relative;
+}
+.loadingImg{
+  display: block;
+  margin: 5rem auto;
+  width: 55%;
+  height: 55%;
+}
+
+.cocktailSection{
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+.cocktailTitle{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.cocktail-center{
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.itemCard{
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .7);
+}
+.img-container{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.img-container img{
+  width: 100%;
+  object-fit: cover;
+}
+.detailsItems{
+  padding: 1rem;
+}
+.detailsItems h3{
+  letter-spacing: .7px;
+  font-size: 1.5rem;
+}
+.detailsItems h4{
+  letter-spacing: .7px;
+  font-size: 1.2rem;
+}
+.detailsItems p{
+  color:grey;
+  margin-bottom: 1rem;
+}
+
+.details-btn,.cocktail-btn{
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color:  rgb(78, 115, 22);
+  color: #fff;
+  padding: .5rem;
+  transition: all .3s ease;
+}
+
+.details-btn:hover,.cocktail-btn:hover{
+  background-color: transparent;
+  color:rgb(78, 115, 22);
+  border: 1px solid rgb(78, 115, 22);
+}
+
+.search{
+  width: 80vw;
+  padding: .8rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  background-color: aliceblue;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .7);
+}
+.searchForm{
+  width: 100%;
+}
+.searchForm .form-control{
+  width: 100%;
+}
+.form-control label{
+  display: block;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: .6rem;
+  font-weight: 600;
+}
+.form-control input{
+  width: 100%;
+  padding: .4rem;
+  border: 1px soild black;
+  margin-bottom: .5rem;
+  outline: none;
+}
+
+.cocktail-section{
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.section-title{
+  text-align: center;
+  margin-bottom: .7rem;
+  letter-spacing: 1px;
+}
+
+.drinkInfo p{
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.ingridients-title{
+  display: inline-block;
+  background-color:rgb(78, 115, 22);
+  color: #fff;
+  padding: .3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  border-radius: 2px;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: .4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:700px) {
+  .nav-center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
+  }
+  .navLogo{
+    width: 50vw;
+    text-align: center;
+    color: black;
+  }
+  .cocktail-center{
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+  }
+  .search{
+    width: 60vw;
+  }
+  .loadingImg{
+    margin-top: 1rem;
+    width: 35%;
+    height: 35%;
+  }
+  .section-title{
+    margin-bottom: 2rem;
+  }
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    width: 75vw;
+    margin: 0 auto;
+    position: relative;
+  }
+  .gridContainer .img-container{
+    overflow: hidden;
+    height: 100%;
+  }
+  .gridContainer .img-container img{
+    height: 100%;
+    width: 70%;
+    display: inline-block;
+    margin-left: 5rem;
+    object-fit: cover;
+  }
+  .drinkInfo{
+    width: 100%;
+    padding:  2rem 0;
+  }
+  
+
+}
+
+
+
+
+
